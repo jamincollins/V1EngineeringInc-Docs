@@ -237,7 +237,7 @@ If you are updating you need to take note of your pull_off values to keep your a
 
 Within FluidNC Web Installer, select _Connect_, select your com port, _Install_, select the current firmware version listed above, _esp32_, _wifi_, _fresh install_, select the WebUI version from above. You might need to hold the boot button to get to the next step.
 
-Some PC's will need USB drivers if your ESP32 is not recognized by the computer. If needed, the ESP32 USB drivers are here [Silabs CP2012 drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads).
+Some PC's will need USB drivers if your ESP32 is not recognized by the computer. If needed, the ESP32 USB drivers are here [Silabs CP2012 drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads).
 
 After you have loaded the firmware you can use the file browser to load our configs and macros from here, [Releases page](https://github.com/V1EngineeringInc/FluidNC_Configs/releases).
 
