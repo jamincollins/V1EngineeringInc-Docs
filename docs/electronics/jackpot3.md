@@ -41,6 +41,7 @@ The Jackpot3 CNC Controller is an all in one CNC control board. This board allow
         * Digital current control, no tiny potentiometers
 
     + 7x Inputs
+        * 3.3v-5V tolerant as of the first revision labeled "V1" when More robust ESD protection was added.
         * All switch inputs are active low.
         * inputs have a 10k pullup external to the ESP32. The signal pin (S) should be connected to the ground pin (G) to activate the switch. 
         * The input pins can be pins in the config file to use Normally Open or Normally Closed inputs.
@@ -346,6 +347,8 @@ Some issues we have seen.
 ## Changelog
 ```
 V0 - The initial release.
+V1 - Input limted to 5V max, inputs get stronger ESD protection.
+
 ```
 
 ## Source
