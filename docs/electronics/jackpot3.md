@@ -115,13 +115,24 @@ Wires should always be ran beside the board never over, proper airflow is essent
 
 Never cross wires over the top of the Jackpot3 antenna, this blocks the antenna signal.
 
-### Onboard 
+### Onboard Interface
 
 ![!Jackpot3 SSID](../img/jackpot/jackpotwifi.jpg){: loading=lazy  width="380"}
 
 If you bought your Jackpot3 CNC Controller from the [V1E.com](https://www.v1e.com/) store it should be ready to go. You should be able to log in directly to the WiFi SSID "FluidNC" and the password = 12345678 
 
 Most browsers will then need to be told to "use this network as is" (upper right corner menu) and then navigate to http://192.168.0.1, best to bookmark that address. 
+
+**Mobile devices** will need to click somewhere up in the top right corner, the "hamburger menu", click "use this network as is", the browser window will usually close at that point. Then navigate to http://192.168.0.1, best to bookmark that address.
+
+![!Jackpot3 log in](../img/jackpot/jackpot3/ASnet.png){: loading=lazy  width="380"}
+
+On a **desktop browser** just click the pop up link to open the full UI in a new tab.
+
+![!Jackpot3 log in](../img/jackpot/jackpot3/ASis.png){: loading=lazy  width="380"}
+
+
+---
 
 ![!WebUI](../img/jackpot/LUI.jpg){: loading=lazy width="500"}
 
@@ -324,6 +335,8 @@ The [FluidNC Wiki](http://wiki.fluidnc.com/) has all the details of this firmwar
 ## Troubleshooting
 Some issues we have seen.
 
+-Wifi connections keep dropping? Follow the connection guide above.  [Onboard Interface](../electronics/jackpot3.md/#onboard-interface).
+
 -No USB connection - Charge only USB cable? Make sure yours is data capable.
 
 -Flashing issues - Pressing the boot button is needed on some boards. If that does not work use the manual method described above.
@@ -347,7 +360,7 @@ Some issues we have seen.
 ## Changelog
 ```
 V0 - The initial release.
-V1 - Input limted to 5V max, inputs get stronger ESD protection.
+V1 - Input limited to 5V max, inputs get stronger ESD protection.
 
 ```
 
