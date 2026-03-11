@@ -360,7 +360,7 @@ Some issues we have seen.
 ## Changelog
 ```
 V0 - The initial release.
-V1 - Input limted to 5V max, inputs get stronger ESD protection.
+V1 - Input limited to 5V max, inputs get stronger ESD protection.
 
 ```
 
