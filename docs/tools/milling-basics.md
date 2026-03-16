@@ -116,7 +116,7 @@ I cannot stress this enough; these numbers are different for every build. Use th
 to find the right settings for your build. You can make a few test cuts a quickly work out how to
 get reliable numbers for your machine. If you keep track of the chip load and cutting force for your machine setting up new jobs gets easier by just matching the numbers for that material.
 
-https://fswizard.com/www/
+[Desktop Calculator](https://app.fswizard.com/speed-and-feed-calculator). [Mobile Calculator Apps](https://fswizard.com/)
 
 ![!pic](../img/old/2018/10/FZ-1080x783.jpg){: loading=lazy width="400"}
 
