@@ -123,7 +123,7 @@ If you bought your Jackpot3 CNC Controller from the [V1E.com](https://www.v1e.co
 
 Most browsers will then need to be told to "use this network as is" (upper right corner menu) and then navigate to http://192.168.0.1, best to bookmark that address. 
 
-**Mobile devices** will need to click somewhere up in the top right corner, the "hamburger menu", click "use this network as is", the browser window will usually close at that point. Then navigate to http://192.168.0.1, best to bookmark that address.
+**Mobile devices** will need to click somewhere up in the top right corner, the "hamburger menu", click "use this network as is", the browser window will usually close at that point. Then navigate to http://192.168.0.1, best to bookmark that address. Here is a short video showing what that looks like, [YouTube](https://youtube.com/shorts/uXAcSFPYshs?feature=share)
 
 ![!Jackpot3 log in](../img/jackpot/jackpot3/ASnet.png){: loading=lazy  width="380"}
 
