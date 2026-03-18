@@ -90,6 +90,11 @@ First and foremost, thank you, Bart Dring and Mitch Bradley, for the amazing des
 
 ## Initial Setup
 
+!!! warning "Static Warning"
+
+    This is a circuit board and you should be mindful anytime you touch it that you are static free. Touch a ground before reaching in to touch a button or un/plug anything. 
+
+
 ### Wiring
 
 Click on the image to enlarge it.
@@ -172,15 +177,15 @@ If it doesn’t move as expected hit disconnect, unplug the power and USB, any a
 
 #### Endstops
 
-The onboard LED's test the wiring connections to your end stops. Our CNC standard is Normally Closed (NC) endstop wiring. Probe is Normally Open.
+Our CNC standard is Normally Closed (NC) endstop wiring. Probe is Normally Open.
 
 You can also test the firmware by running "$Limits" in the terminal windows of the WebUI, this will show a real time trigger display. "!" to exit that mode.
 
-!!! note
+!!! note "Endstops, not Limit Switches"
 
-    It is important to note the endstops are only active during the homing procedure for that axis, they will not stop a machine in motion or running g-code. You can set them to do that but that is an advanced topic.
+    It is important to note the endstops are only active during the homing procedure for that axis, they will not stop a machine in motion or running g-code (limit switch). You can easily set them to do that but that is an advanced topic.
 
-### Auto Square
+#### Auto Square
 
 Auto Square on this board is as easy as editing each endstop individually directly from the Settings/Config section of the WebUI (or directly to the yaml file).
 
@@ -192,7 +197,14 @@ From there you have a "pulloff_mm" setting for each endstop. This setting is how
 
 Be sure to **save** your edits at the bottom of the config screen, and then by also using the save button (macro) on the home screen!
 
-### Terminal Commands
+### Z Probe
+
+The Z probe should be wired with the spindle side (clamp / magnet) to the ground side of the plug and the plate to the signal side. To be as safe as possible the probe and clamp should be stored touching to disipate and static and keep the board's inputs safe. A good habit is to touch a ground before reaching in to grab the touchplate.
+
+
+
+## Terminal Commands
+
 Here are some other useful terminal commands, for a full list please see the [FluidNC Wiki](http://wiki.fluidnc.com/).
 
 `$SS` - Startup messages, if you have any info we will ask to see this output.
