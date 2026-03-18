@@ -199,9 +199,12 @@ Be sure to **save** your edits at the bottom of the config screen, and then by a
 
 ### Z Probe
 
-The Z probe should be wired with the spindle side (clamp / magnet) to the ground side of the plug and the plate to the signal side. To be as safe as possible the probe and clamp should be stored touching to disipate and static and keep the board's inputs safe. A good habit is to touch a ground before reaching in to grab the touchplate.
+The Z probe should be wired with the spindle side (clamp / magnet) to the ground side of the plug and the plate to the signal side. To be as safe as possible the probe and clamp should be stored touching to dissipate and static and keep the board's inputs safe. A good habit is to touch a ground before reaching in to grab the touchplate.
+
+![!touchplate](../img/jackpot/jackpot3/connected.jpg){: loading=lazy  width="400"}
 
 
+![!touchplate old style](../img/jackpot/jackpot3/connected_old.jpg){: loading=lazy  width="400"}
 
 ## Terminal Commands
 
