@@ -102,7 +102,7 @@ By leaving a bit of material on your roughing cut you can then cut off a very sm
 
 ### Climb vs. Conventional Milling
 
-For the most part you always want to Climb mill. The edge of the cutter starts with a large bite and ends small, reducing deflection, work hardening, and heat retention.
+For the most part you always want to Conventional Mill. The edge of the cutter starts with a small bite and ends large. But sometimes Climb milling works better, test cuts are your friend.
 
 !!! note "Conventional milling"
     [![pic](../img/old/2017/09/blog_conventional-climb-milling2.jpg){: loading=lazy width="200"}]( http://www.harveyperformance.com/in-the-loupe/conventional-vs-climb-milling/)
@@ -172,7 +172,8 @@ What your machine will do **before** the job starts. The LowRider Configs show e
     G21
     G90
     G94
-    G92 X0 Y0
+    G10 L20 P0 X0 Y0 Z0 (set current location to zero, survives reboot)
+    G0 X10 Y10 F2000 (move to probing location)
     M0 (MSG Attach probe)
     G38.2 Z-110 F200 P0.5 (probe down set thickness )
     G1 Z10 F900
@@ -198,7 +199,8 @@ What your machine will do **before** the job starts. The LowRider Configs show e
     G21
     G90
     G94
-    G92 X0 Y0
+    G10 L20 P0 X0 Y0 Z0 (set current location to zero, survives reboot)
+    G0 X10 Y10 F2000 (move to probing location)
     M0 (MSG Attach probe)
     G38.2 Z-110 F200 P0.5 (probe down set thickness )
     G1 Z10 F900
@@ -227,7 +229,7 @@ Only happens if you change a tool during your job. It happens at each tool chang
     G91
     G0 Z10
     G90
-    G0 X0 Y10 F2520 
+    G0 X10 Y10 F2000 (move to probing location, match first location)
     M0 (MSG change tool, probe)
     G38.2 Z-110 F200 P0.5 (Probe set thickness)
     G00 Z10.0000 F500 (Clearance)
@@ -252,7 +254,7 @@ Only happens if you change a tool during your job. It happens at each tool chang
     ```
     M63 P1 (turn off pin 27)
     $HZ
-    G0 X0 Y10 F2520 
+    G0 X10 Y10 F2000 (move to probing location, match first location)
     M0 (MSG change tool, probe)
     G38.2 Z-110 F200 P0.5 (Probe set thickness)
     G00 Z10.0000 F500 (Clearance)
@@ -293,12 +295,17 @@ Happens directly after your last move from your job file.
     M30
     ```    
 
-#### Estlcam Gcode
+#### Estlcam Post Processing Gcode
 Here where the above snippets would go in EstlCAM. It would look similar in other programs.
 
 ![!pic](../img/old/2018/06/start.jpg){: loading=lazy width="400"}
 ![!pic](../img/old/2018/06/Change.jpg){: loading=lazy width="400"}
 ![!pic](../img/old/2018/06/End.jpg){: loading=lazy width="400"}
+
+### CAD to DXF to Gcode
+
+This videos shows a quick example of a CAD to CAM workflow. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ywz0oVOAgOo?si=T_sw7ztZTOH8Ca7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Post Processors
 
